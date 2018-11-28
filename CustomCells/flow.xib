@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="184" id="MAy-sR-eTf">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MAy-sR-eTf" id="wdr-3x-9bU">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="183.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="333" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cee-gh-0dy">
+                        <rect key="frame" x="16" y="11" width="288" height="162"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cee-gh-0dy" firstAttribute="trailing" secondItem="wdr-3x-9bU" secondAttribute="trailingMargin" id="5ug-se-39K"/>
+                    <constraint firstItem="cee-gh-0dy" firstAttribute="bottom" secondItem="wdr-3x-9bU" secondAttribute="bottomMargin" id="6D8-gA-YL6"/>
+                    <constraint firstItem="cee-gh-0dy" firstAttribute="leading" secondItem="wdr-3x-9bU" secondAttribute="leadingMargin" id="b9t-OB-HGd"/>
+                    <constraint firstItem="cee-gh-0dy" firstAttribute="top" secondItem="wdr-3x-9bU" secondAttribute="topMargin" id="xIS-Ar-BO4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-38.399999999999999" y="37.781109445277366"/>
+        </tableViewCell>
+    </objects>
+</document>

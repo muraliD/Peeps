@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="121" id="dxZ-Ul-tdP">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dxZ-Ul-tdP" id="aEk-Fe-Pff">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="333" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hUP-iz-yBO">
+                        <rect key="frame" x="8" y="16" width="238" height="88.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" tag="44" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf0-aF-qrv">
+                        <rect key="frame" x="261" y="36" width="50" height="48.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="PLh-KX-gqO"/>
+                        </constraints>
+                        <state key="normal" image="intn"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hf0-aF-qrv" firstAttribute="leading" secondItem="hUP-iz-yBO" secondAttribute="trailing" constant="15" id="09a-aL-8CD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hf0-aF-qrv" secondAttribute="trailing" constant="-7" id="1ql-7v-i9l"/>
+                    <constraint firstItem="hUP-iz-yBO" firstAttribute="leading" secondItem="aEk-Fe-Pff" secondAttribute="leadingMargin" constant="-8" id="HHK-pj-YBR"/>
+                    <constraint firstItem="hUP-iz-yBO" firstAttribute="centerY" secondItem="hf0-aF-qrv" secondAttribute="centerY" id="KMq-sc-BvS"/>
+                    <constraint firstItem="hf0-aF-qrv" firstAttribute="top" secondItem="aEk-Fe-Pff" secondAttribute="topMargin" constant="25" id="Lln-Xt-2S6"/>
+                    <constraint firstItem="hUP-iz-yBO" firstAttribute="top" secondItem="aEk-Fe-Pff" secondAttribute="topMargin" constant="5" id="bGI-Kc-k4y"/>
+                    <constraint firstItem="hUP-iz-yBO" firstAttribute="centerY" secondItem="aEk-Fe-Pff" secondAttribute="centerY" id="g4Y-H0-0Tf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-43" y="-8.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="intn" width="76" height="76"/>
+    </resources>
+</document>

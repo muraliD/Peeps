@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="276" id="m3o-B5-Lxx" customClass="pdetCell" customModule="PEEPS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m3o-B5-Lxx" id="fGN-tW-Pbm">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="275.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wl-l3-yt6">
+                        <rect key="frame" x="6" y="5" width="309" height="267"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="888" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PgO-TV-RrG">
+                                <rect key="frame" x="79.5" y="8" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Csk-da-F5A"/>
+                                    <constraint firstAttribute="width" constant="150" id="nAR-De-OO2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o0x-XE-DV8">
+                                <rect key="frame" x="8" y="166" width="301" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="3gN-jK-Jth"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RoO-3z-PlH">
+                                <rect key="frame" x="8" y="173" width="231" height="79"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXb-EC-6gP">
+                                <rect key="frame" x="239" y="173" width="70" height="79"/>
+                                <state key="normal" image="int3"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RoO-3z-PlH" firstAttribute="centerY" secondItem="UXb-EC-6gP" secondAttribute="centerY" id="9V6-Ae-8d6"/>
+                            <constraint firstItem="o0x-XE-DV8" firstAttribute="trailing" secondItem="7Wl-l3-yt6" secondAttribute="trailingMargin" constant="8" id="EuW-H8-245"/>
+                            <constraint firstItem="RoO-3z-PlH" firstAttribute="leading" secondItem="o0x-XE-DV8" secondAttribute="leading" id="NFp-Jf-eSS"/>
+                            <constraint firstItem="o0x-XE-DV8" firstAttribute="bottom" secondItem="7Wl-l3-yt6" secondAttribute="bottomMargin" id="Rvv-10-IC1"/>
+                            <constraint firstItem="o0x-XE-DV8" firstAttribute="leading" secondItem="7Wl-l3-yt6" secondAttribute="leadingMargin" id="ahb-gB-4ad"/>
+                            <constraint firstItem="RoO-3z-PlH" firstAttribute="trailing" secondItem="PgO-TV-RrG" secondAttribute="trailing" constant="9.5" id="cHT-fT-lfL"/>
+                            <constraint firstItem="UXb-EC-6gP" firstAttribute="leading" secondItem="RoO-3z-PlH" secondAttribute="trailing" id="g2X-n6-XyX"/>
+                            <constraint firstItem="o0x-XE-DV8" firstAttribute="top" secondItem="PgO-TV-RrG" secondAttribute="bottom" constant="8" symbolic="YES" id="isK-o7-odx"/>
+                            <constraint firstItem="RoO-3z-PlH" firstAttribute="bottom" secondItem="o0x-XE-DV8" secondAttribute="bottom" constant="-7" id="nca-sI-NsA"/>
+                            <constraint firstItem="PgO-TV-RrG" firstAttribute="centerX" secondItem="o0x-XE-DV8" secondAttribute="centerX" constant="-4" id="qAB-hM-9XK"/>
+                            <constraint firstAttribute="bottom" secondItem="UXb-EC-6gP" secondAttribute="bottom" constant="15" id="qhW-hm-5E9"/>
+                            <constraint firstItem="RoO-3z-PlH" firstAttribute="top" secondItem="o0x-XE-DV8" secondAttribute="top" constant="7" id="tKl-B7-eum"/>
+                            <constraint firstAttribute="trailing" secondItem="UXb-EC-6gP" secondAttribute="trailing" id="uxi-8p-32P"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7Wl-l3-yt6" firstAttribute="centerY" secondItem="fGN-tW-Pbm" secondAttribute="centerY" id="DQ4-Xr-utc"/>
+                    <constraint firstItem="7Wl-l3-yt6" firstAttribute="centerX" secondItem="fGN-tW-Pbm" secondAttribute="centerX" id="itP-hy-JNC"/>
+                    <constraint firstItem="7Wl-l3-yt6" firstAttribute="leading" secondItem="fGN-tW-Pbm" secondAttribute="leadingMargin" constant="-10" id="lWn-cs-Bjq"/>
+                    <constraint firstItem="7Wl-l3-yt6" firstAttribute="top" secondItem="fGN-tW-Pbm" secondAttribute="topMargin" constant="-6" id="wOt-Yi-Ueb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn" destination="UXb-EC-6gP" id="e2O-V2-fh6"/>
+                <outlet property="imageViews" destination="PgO-TV-RrG" id="AAU-rB-WhS"/>
+                <outlet property="txt" destination="RoO-3z-PlH" id="hHx-kH-D42"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="71"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="76" height="76"/>
+        <image name="int3" width="76" height="76"/>
+    </resources>
+</document>

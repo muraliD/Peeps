@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="48" id="Emc-HF-guG">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Emc-HF-guG" id="v6o-ae-eXG">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="47.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Peeps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMU-eX-5AH">
+                        <rect key="frame" x="16" y="0.0" width="83" height="48"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="435" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCh-98-ut2">
+                        <rect key="frame" x="110" y="4" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.57647058819999997" green="0.1529411765" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="pera"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aMU-eX-5AH" firstAttribute="centerY" secondItem="v6o-ae-eXG" secondAttribute="centerY" id="67g-w6-fEG"/>
+                    <constraint firstItem="rCh-98-ut2" firstAttribute="leading" secondItem="aMU-eX-5AH" secondAttribute="trailing" constant="11" id="GS9-jy-UaC"/>
+                    <constraint firstItem="rCh-98-ut2" firstAttribute="centerY" secondItem="aMU-eX-5AH" secondAttribute="centerY" id="VcB-BK-JwG"/>
+                    <constraint firstItem="aMU-eX-5AH" firstAttribute="top" secondItem="v6o-ae-eXG" secondAttribute="top" id="hwJ-7e-cWp"/>
+                    <constraint firstItem="aMU-eX-5AH" firstAttribute="leading" secondItem="v6o-ae-eXG" secondAttribute="leadingMargin" id="saL-aj-qas"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-13" y="9"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pera" width="40" height="40"/>
+    </resources>
+</document>

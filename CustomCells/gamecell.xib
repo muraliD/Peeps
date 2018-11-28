@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="41" id="hVm-cd-3Yd">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hVm-cd-3Yd" id="Gz7-fp-GWE">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="780" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLT-jE-Ekd">
+                        <rect key="frame" x="16" y="14" width="20" height="22"/>
+                        <state key="normal" image="check"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="781" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qah-Lc-cWb">
+                        <rect key="frame" x="44" y="15" width="88" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="gE9-Mn-euB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CLT-jE-Ekd" firstAttribute="leading" secondItem="Gz7-fp-GWE" secondAttribute="leadingMargin" id="7mt-sZ-WfO"/>
+                    <constraint firstItem="CLT-jE-Ekd" firstAttribute="bottom" secondItem="qah-Lc-cWb" secondAttribute="bottom" id="ChP-Jn-ka3"/>
+                    <constraint firstItem="qah-Lc-cWb" firstAttribute="leading" secondItem="CLT-jE-Ekd" secondAttribute="trailing" constant="8" symbolic="YES" id="RVF-dK-4bR"/>
+                    <constraint firstItem="CLT-jE-Ekd" firstAttribute="centerY" secondItem="Gz7-fp-GWE" secondAttribute="centerY" id="l4R-iz-jut"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="3" y="-23"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="20" height="20"/>
+    </resources>
+</document>

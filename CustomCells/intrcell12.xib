@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="201" id="orS-xX-WZk">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="orS-xX-WZk" id="V4Q-sj-pto">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="249.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="500" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IE7-aS-hZD">
+                        <rect key="frame" x="16" y="11" width="288" height="224"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="501" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="xtt-yb-z4W">
+                                <rect key="frame" x="104" y="72" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Dj3-P4-G8I"/>
+                                    <constraint firstAttribute="width" constant="80" id="fF2-Yi-GiG"/>
+                                    <constraint firstAttribute="height" constant="80" id="lVN-IB-9CZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xtt-yb-z4W" firstAttribute="top" secondItem="IE7-aS-hZD" secondAttribute="top" constant="72" id="TbW-Yv-30b"/>
+                            <constraint firstItem="xtt-yb-z4W" firstAttribute="centerX" secondItem="IE7-aS-hZD" secondAttribute="centerX" id="Wzg-Qq-bAG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="IE7-aS-hZD" secondAttribute="bottom" constant="4" id="EBq-wy-ChA"/>
+                    <constraint firstItem="IE7-aS-hZD" firstAttribute="top" secondItem="V4Q-sj-pto" secondAttribute="topMargin" id="JC1-pg-ZeT"/>
+                    <constraint firstItem="IE7-aS-hZD" firstAttribute="trailing" secondItem="V4Q-sj-pto" secondAttribute="trailingMargin" id="UFE-ET-xsz"/>
+                    <constraint firstItem="IE7-aS-hZD" firstAttribute="leading" secondItem="V4Q-sj-pto" secondAttribute="leadingMargin" id="vJW-IQ-jwb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-43.200000000000003" y="15.292353823088456"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="76" height="76"/>
+    </resources>
+</document>
