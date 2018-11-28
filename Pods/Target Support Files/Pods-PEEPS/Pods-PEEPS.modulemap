@@ -1,0 +1,6 @@
+framework module Pods_PEEPS {
+  umbrella header "Pods-PEEPS-umbrella.h"
+
+  export *
+  module * { export * }
+}
